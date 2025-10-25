@@ -348,6 +348,7 @@ const Dashboard: React.FC = () => {
             )}
             
            </div>
+           <FAQ />
            <div className='grid grid-cols-2 gap-[95px]'>
             <div className='flex flex-col gap-12'>
 
@@ -396,7 +397,7 @@ const Dashboard: React.FC = () => {
             </div>
             
            </div>
-        <FAQ />
+        
         <CartButton />
            
 
