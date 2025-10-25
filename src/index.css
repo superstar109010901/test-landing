@@ -11,3 +11,119 @@
     font-family: 'Poppins', sans-serif;
   }
 }
+
+
+.swiper {
+  max-width: calc(100vw - 420px);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Override global swiper-slide styles for ProductSlider */
+.product-swiper .swiper-slide {
+  width: 250px !important;
+  flex-shrink: 0 !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  font-size: inherit !important;
+}
+
+/* Custom scrollbar styling for ProductSlider */
+.product-swiper {
+  --swiper-scrollbar-bg-color: rgba(55, 65, 81, 0.3);
+  --swiper-scrollbar-drag-bg-color: #10B981;
+  --swiper-scrollbar-size: 4px;
+}
+
+.product-swiper .swiper-scrollbar {
+ background: #030904 !important;
+  border-radius: 2px !important;
+  height: 6px !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  position: relative !important;
+  margin-top: 20px !important;
+}
+
+.product-swiper .swiper-scrollbar-drag {
+  background: linear-gradient(90deg, #10B981, #34D399) !important;
+  border-radius: 2px !important;
+  cursor: grab !important;
+  height: 6px !important;
+  min-width: 20px !important;
+}
+
+.product-swiper .swiper-scrollbar-drag:active {
+  cursor: grabbing !important;
+}
+
+.product-swiper .swiper-scrollbar-drag:hover {
+  background: linear-gradient(90deg, #059669, #10B981) !important;
+}
+
+/* Navigation button hover effects */
+.product-swiper .swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Ensure scrollbar is visible */
+.product-swiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: block !important;
+  opacity: 1 !important;
+  position: relative !important;
+  height: 12px !important;
+  border-radius: 50px !important;
+  border: 1px solid #999999 !important;
+  overflow: hidden !important;
+  margin-top: 16px !important;
+}
+
+
+/* Ensure ProductCard maintains proper styling in slider */
+.product-swiper .swiper-slide > div {
+  width: 234px !important;
+  max-width: 234px !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Additional scrollbar styling for better visibility */
+.product-swiper .swiper-scrollbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(55, 65, 81, 0.3);
+  border-radius: 2px;
+}
+
+.product-swiper .swiper-scrollbar-drag:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #10B981, #34D399);
+  border-radius: 50px !important;
+  height: 12px !important;
+  overflow: hidden !important;
+}

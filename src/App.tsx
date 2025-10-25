@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-slate-900">
-      <nav className="p-4">
+      {/* <nav className="p-4">
         <div className="flex gap-4 justify-center">
           <button 
             onClick={() => setCurrentPage('landing')}
@@ -45,7 +45,7 @@ function App() {
             Head Catalog Demo
           </button>
         </div>
-      </nav>
+      </nav> */}
       
       {currentPage === 'dashboard' ? <Dashboard /> : currentPage === 'landing' ? <LandingPage /> : currentPage === 'catalog' ? <CatalogDemo /> : currentPage === 'navbar' ? <NavBarDemo /> : currentPage === 'header' ? <HeaderDemo /> : <HeadCatalogDemo />}
     </div>
